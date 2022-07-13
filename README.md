@@ -1,4 +1,4 @@
-# DiffSinger - PyTorch Implementation
+#DiffSinger - PyTorch Implementation
 
 PyTorch implementation of [DiffSinger: Singing Voice Synthesis via Shallow Diffusion Mechanism](https://arxiv.org/abs/2105.02446) (focused on DiffSpeech).
 
@@ -10,24 +10,24 @@ PyTorch implementation of [DiffSinger: Singing Voice Synthesis via Shallow Diffu
     <img src="img/model_2.png" width="80%">
 </p>
 
-# Repository Status
-- [x] Naive Version of DiffSpeech (not DiffSinger)
-- [x] Auxiliary Decoder (from FastSpeech2)
-- [x] An Easier Trick for Boundary Prediction of `K`
-- [x] Shallow Version of DiffSpeech (Shallow Diffusion Mechanism): Leveraging pre-trained auxiliary decoder + Training denoiser using `K` as a maximum time step
-- [ ] Multi-Speaker Training
+# Adam's Installation Notes
+
+<p style="color:blue">
+Assuming conda is installed, use the following lines to install dependencies onto an environment called `fss`.
+</p>
+```
+conda create -n fss
+conda activate fss
+conda install -c conda-forge --file requirements.txt --yes
+conda install pip
+pip install praat-parselmouth==0.4.1 tgt==1.4.3
+```
 
 # Quickstart
 
 ***DATASET*** refers to the names of datasets such as `LJSpeech` in the following documents.
 
 ***MODEL*** refers to the types of model (choose from '**naive**', '**aux**', '**shallow**').
-
-## Dependencies
-You can install the Python dependencies with
-```
-pip3 install -r requirements.txt
-```
 
 ## Inference
 
