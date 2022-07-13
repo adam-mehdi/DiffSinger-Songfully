@@ -15,12 +15,14 @@ PyTorch implementation of [DiffSinger: Singing Voice Synthesis via Shallow Diffu
 <p style="color:blue">
 Assuming conda is installed, use the following lines to install dependencies onto an environment called `fss`.
 </p>
+
 ```
 conda create -n fss
 conda activate fss
 conda install -c conda-forge --file requirements.txt --yes
 conda install pip
 pip install praat-parselmouth==0.4.1 tgt==1.4.3
+
 ```
 
 # Quickstart
